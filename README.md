@@ -14,6 +14,12 @@
 
 切换成功后打开 WebTerminal，即可使用 java + maven
 
+```shell
+java -version && mvn -v
+```
+
+
+
  ![图片](https://dn-coding-net-production-pp.qbox.me/81fde7d9-6f5c-49da-a8e1-8d07cc090a8a.png) 
 
 ## 2. 设置项目类型
@@ -25,7 +31,7 @@
 ![图片](https://dn-coding-net-production-pp.qbox.me/0f61dc64-aa60-4620-afb0-db4b78fe8757.png)
 
 在弹出的界面依次设置 `项目类型`、`Source Folder`、`Library Folder`
- 
+
 ![图片](https://dn-coding-net-production-pp.qbox.me/a5d1dcf6-782a-49f1-a636-b7c2d4321d45.png)
 
 这里简单介绍下参数的含义：
@@ -64,11 +70,11 @@
 代码补全时，如果引入了新的类，WebIDE 会智能的在源码文件顶部 import 该类：
 
  ![图片](https://dn-coding-net-production-pp.qbox.me/91815ee1-1532-4328-b20e-6614a72e236a.gif) 
- 
+
 有一些补全比较特殊，并不能仅仅将补全内容插入到源码文件，还需要和用户经过几个步骤的交互才算补全完成，比如一个方法包含多个参数这种情况，又或者像 for 循环这种模板。这里我们拿 for 循环演示，补全后会有几处位置，WebIDE 将其高亮显示：
 
  ![图片](https://dn-coding-net-production-pp.qbox.me/9314c41a-4afe-478e-adec-4aceda5250e2.gif) 
- 
+
 WebIDE 从第一个高亮开始，插入用户输入的内容，用户输入完成后，使用 `Tab` 跳转到下一个位置，直到所有位置都被用户处理，才算完成本次的代码补全。
 
 ## 4. 错误提示
@@ -76,7 +82,7 @@ WebIDE 从第一个高亮开始，插入用户输入的内容，用户输入完�
 对于包含错误的代码，WebIDE 给予一定程度的错误提示，并在指定的位置标红，鼠标放到左侧红色的图标上，会显示更详细的错误信息：
 
  ![图片](https://dn-coding-net-production-pp.qbox.me/350bd17a-1824-4223-bb93-de6fff33b186.gif) 
- 
+
 除了错误提示，WebIDE 还会向用户发出**可以忽略的"警告"**：
 
  ![图片](https://dn-coding-net-production-pp.qbox.me/734589a5-75fe-403b-b25e-47680ccf2427.png) 
@@ -104,9 +110,11 @@ WebIDE 支持代码类、方法的跳转，跳转的范围为项目的源码或�
 
 在这里，可以手动添加、删除 classpath 中的 jar 包。也可以添加、修改、删除项目的源码目录位置。
 
-## 7. 体验
+## 7. 运行
 
-打开 WebIDE，选择 `快速体验 Java`，按照教程中的内容操作、体验即可。
+输入以下命令即可运行此 Demo ，默认运行在 8080端口， 之后使用*访问链接*功能对此端口进行映射，即可在外部进行访问。
 
- ![图片](https://dn-coding-net-production-pp.qbox.me/8904eb27-45f4-4c80-9b4b-8dcc4c963e54.png) 
+```Shell
+mvn spring-boot:run
+```
 
