@@ -1,18 +1,18 @@
-# WebIDE Java 项目配置指南
+# Cloud Studio Java 项目配置指南
 
 [TOC]
 
-本指南介绍如何在 WebIDE 里安装配置 Java 项目。
+本指南介绍如何在 Cloud Studio 里安装配置 Java 项目。
 
 > 如果你当前阅读的 Markdown 源文件，请打开 https://coding.net/u/tanhe123/p/JavaDemo/git ，渲染以后的效果能看见图片
 
-## 1. 准备 Java + Maven 环境（Java Demo 已默认使用）
+## 1. 准备 Java + Maven 环境
 
 在运行环境列表中选择 `ide-tty-java-maven` 环境
 
  ![图片](https://dn-coding-net-production-pp.qbox.me/08d92b92-3dd9-4294-b2ec-9899b950dd73.png)
 
-切换成功后打开 WebTerminal，即可使用 java + maven
+切换成功后打开 Terminal，即可使用 java + maven
 
 ```shell
 java -version && mvn -v
@@ -67,29 +67,29 @@ java -version && mvn -v
 
 可以看到，使用 tab 的方式会智能替换掉原有代码。其它场景，回车与 tab 可以替换使用。
 
-代码补全时，如果引入了新的类，WebIDE 会智能的在源码文件顶部 import 该类：
+代码补全时，如果引入了新的类，Cloud Studio 会智能的在源码文件顶部 import 该类：
 
  ![图片](https://dn-coding-net-production-pp.qbox.me/91815ee1-1532-4328-b20e-6614a72e236a.gif) 
 
-有一些补全比较特殊，并不能仅仅将补全内容插入到源码文件，还需要和用户经过几个步骤的交互才算补全完成，比如一个方法包含多个参数这种情况，又或者像 for 循环这种模板。这里我们拿 for 循环演示，补全后会有几处位置，WebIDE 将其高亮显示：
+有一些补全比较特殊，并不能仅仅将补全内容插入到源码文件，还需要和用户经过几个步骤的交互才算补全完成，比如一个方法包含多个参数这种情况，又或者像 for 循环这种模板。这里我们拿 for 循环演示，补全后会有几处位置，Cloud Studio 将其高亮显示：
 
  ![图片](https://dn-coding-net-production-pp.qbox.me/9314c41a-4afe-478e-adec-4aceda5250e2.gif) 
 
-WebIDE 从第一个高亮开始，插入用户输入的内容，用户输入完成后，使用 `Tab` 跳转到下一个位置，直到所有位置都被用户处理，才算完成本次的代码补全。
+Cloud Studio 从第一个高亮开始，插入用户输入的内容，用户输入完成后，使用 `Tab` 跳转到下一个位置，直到所有位置都被用户处理，才算完成本次的代码补全。
 
 ## 4. 错误提示
 
-对于包含错误的代码，WebIDE 给予一定程度的错误提示，并在指定的位置标红，鼠标放到左侧红色的图标上，会显示更详细的错误信息：
+对于包含错误的代码，Cloud Studio 给予一定程度的错误提示，并在指定的位置标红，鼠标放到左侧红色的图标上，会显示更详细的错误信息：
 
  ![图片](https://dn-coding-net-production-pp.qbox.me/350bd17a-1824-4223-bb93-de6fff33b186.gif) 
 
-除了错误提示，WebIDE 还会向用户发出**可以忽略的"警告"**：
+除了错误提示，Cloud Studio 还会向用户发出**可以忽略的"警告"**：
 
  ![图片](https://dn-coding-net-production-pp.qbox.me/734589a5-75fe-403b-b25e-47680ccf2427.png) 
 
 ## 5. 定义跳转
 
-WebIDE 支持代码类、方法的跳转，跳转的范围为项目的源码或第三方 jar。
+Cloud Studio 支持代码类、方法的跳转，跳转的范围为项目的源码或第三方 jar。
 
 具体使用方法为：
 
