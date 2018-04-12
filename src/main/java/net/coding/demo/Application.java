@@ -16,7 +16,7 @@ public class Application {
     @RequestMapping("/")
     @ResponseBody
     public String home() {
-        return "Hello World!";
+        return "Welcome to Cloud Studio!";
     }
 
     public static void main(String[] args) throws Exception {
