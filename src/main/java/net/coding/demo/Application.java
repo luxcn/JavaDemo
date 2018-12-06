@@ -6,9 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-/**
- * Created by tan on 17/01/2017.
- */
+
 @Controller
 @SpringBootApplication
 public class Application {
