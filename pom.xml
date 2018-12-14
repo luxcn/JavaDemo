@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.coding</groupId>
-	<artifactId>demo</artifactId>
+	<artifactId>studio-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>JavaDemo</name>
+	<name>studio-demo</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
@@ -55,4 +55,3 @@
 
 
 </project>
-
