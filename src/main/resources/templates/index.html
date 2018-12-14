@@ -15,6 +15,7 @@
             a {
                 color: #0066FF;
                 text-decoration: none;
+                transition: all 0.4s;
             }
 
             a:hover {
@@ -102,7 +103,7 @@
             #global_footer .record_img_info img{
                  position: absolute;
                  max-width: 353px;
-                 width: 100%;
+                 width: 220px;
                  height: auto;
             }
 
@@ -162,15 +163,35 @@
                 color: #0066FF;
             }
 
-            .tcloud-coupon {
+            .cs-campaign {
                 padding: 80px 0;
             }
 
-            .tcloud-coupon h2 {
-                margin: 0 auto 60px;
+            .cs-campaign h2 {
+                margin: 0 auto 30px;
             }
-
-            .tcloud-coupon p {
+            .cs-campaign a {
+                background: #fff;
+                padding: 12px 20px;
+                border-radius: 2px;
+                color: #FFF;
+                background: #0066FF;
+                border: 1px solid #0066FF;
+            }
+            .cs-campaign a.plugin-tutorial{
+                margin-left: 10px;
+                color: #0066FF;
+                background: transparent;
+            }
+            .cs-campaign a:hover {
+                box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            }
+            .cs-campaign a.plugin-tutorial:hover{
+                color: #FFF;
+                background: #0066FF;
+                box-shadow: none;
+            }
+            .cs-campaign p {
                 color: #425063;
                 max-width: 340px;
                 margin: 0 auto 30px;
@@ -319,13 +340,13 @@
     <div class="container">
         <div class="cover">
             <div class="header">
-                <a href="https://studio.coding.net" class="logo">Cloud Studio</a>
+                <a href="https://studio.dev.tencent.com" class="logo">Cloud Studio</a>
                 <ul class="nav">
                     <li>
-                        <a href="https://studio.coding.net/intro" target="_blank" rel="noopener noreferrer">产品介绍</a>
+                        <a href="https://studio.dev.tencent.com/intro" target="_blank" rel="noopener noreferrer">产品介绍</a>
                     </li>
                     <li>
-                        <a href="https://coding.net/help/doc/webide" target="_blank" rel="noopener noreferrer">帮助</a>
+                        <a href="https://dev.tencent.com/help/doc/cloud-studio" target="_blank" rel="noopener noreferrer">文档</a>
                     </li>
                 </ul>
             </div>
@@ -336,17 +357,18 @@
             <span>当前系统的 Java 版本为</span>
             <span class="version" th:text="${jreVersion}">version</span>
         </div>
-        <div class="tcloud-coupon">
-            <h2>领券免费使用 Cloud Studio</h2>
-            <p>绑定腾讯云账号即可领取一百元腾讯云代金券，足够 Cloud Studio 使用 6 个月。</p>
-            <a href="https://dnspod.cloud.tencent.com/act/coding">领取腾讯云优惠券</a>
+        <div class="cs-campaign">
+            <h2>写插件，赢大奖</h2>
+            <p>立即参加「我最喜爱的 Cloud Studio 插件评选大赛」，有机会赢得 MacBook Pro！</p>
+            <a href="https://dev.tencent.com/login?return_url=https://studio.dev.tencent.com/dashboard/plugin/create" target="_blank">马上参加</a>
+            <a href="https://studio.dev.tencent.com/plugins-docs" class="plugin-tutorial" target="_blank">插件教程</a>
         </div>
         <div class="full-wide">
             <div class="half-wide coding-intro">
                 <div class="content">
                     <div class="left">
                         <h2>面向未来的项目与代码管理工具</h2>
-                        <a href="https://coding.net/about">了解腾讯云开发者平台</a>
+                        <a href="https://dev.tencent.com" target="_blank">前往了解</a>
                     </div>
                     <div class="right"></div>
                 </div>
@@ -354,8 +376,8 @@
             <div class="half-wide invite-friend">
                 <div class="content">
                     <div class="left">
-                        <h2>Cloud Studio 插件大赛火热进行中分享活动送话费</h2>
-                        <a href="https://coding.net/help/account/invitation.html">查看活动详情</a>
+                        <h2>分享插件大赛活动送话费</h2>
+                        <a href="https://studio.qcloud.coding.net/campaign/favorite-plugins/" target="_blank">查看活动详情</a>
                     </div>
                     <div class="right"></div>
                 </div>
@@ -364,29 +386,16 @@
         <div id="global_footer">
             <div class="record">
                 <div class="record_img_info">
-                    <a href="https://coding.net/index">
-                        <img src="https://dn-coding-net-production-pp.qbox.me/0905c8a9-5b33-4819-83d4-3cd0528b0c86.png"></a>
+                    <img src="https://dn-coding-net-production-pp.codehub.cn/114dd24b-7ac5-45ce-8af7-3c741a153d05.png" width="120px">
                     <div class="record_info">
                         <p>
-                            <a href="https://coding.net/privacy" target="_blank" rel="noopener noreferrer">隐私策略</a>
-                            <!-- react-text: 70 -->
-                            |
-                            <!-- /react-text -->
-                            <a href="https://coding.net/terms" target="_blank" rel="noopener noreferrer">服务条款</a>
-                            <!-- react-text: 72 -->
-                            |
-                            <!-- /react-text -->
-                            <a href="https://coding.net/security" target="_blank" rel="noopener noreferrer">安全策略</a>
+                            <a href="https://dev.tencent.com/privacy" target="_blank" rel="noopener noreferrer">隐私策略</a>
+                            <a href="https://dev.tencent.com/terms" target="_blank" rel="noopener noreferrer">服务条款</a>
+                            <a href="https://dev.tencent.com/security" target="_blank" rel="noopener noreferrer">安全策略</a>
                         </p>
                         <p>
-                            <a href="https://coding.net/index">© 2017 Coding.net</a>
-                            <!-- react-text: 76 -->
-                            |
-                            <!-- /react-text -->
-                            <a href="http://www.miitbeian.gov.cn/" target="_blank" rel="noopener noreferrer">粤ICP备14029750号</a>
-                            <!-- react-text: 78 -->
-                            | 深圳市扣钉网络科技有限公司
-                            <!-- /react-text --> </p>
+                            Copyright © 2013-2018 Tencent Cloud. All Rights Reserved. 腾讯云 版权所有 | 粤B2-20090059
+                        </p>
                     </div>
                 </div>
             </div>
