@@ -9,6 +9,6 @@
 ![](https://dn-coding-net-production-pp.codehub.cn/707e8cdc-1133-4337-bc9e-3edc0e58445f.jpg)
 
 2. 完全启动之后，在右边的【访问链接】侧边栏中将端口号改为 8080 并点击旁边的【+】
-，生成 8081 端口的访问链接，点击就可以打开示例页面了。
+，生成 8080 端口的访问链接，点击就可以打开示例页面了。
 
 ![](https://dn-coding-net-production-pp.codehub.cn/47f07a4f-7b50-4f28-bb56-90570ea01799.jpg)
